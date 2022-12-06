@@ -27,7 +27,6 @@ void perfect_number(int nbr);
 
 int main()
 {
-    int nbr = 100;
-    perfect_number(nbr);
+    perfect_number(555);
     return 0;
 }
