@@ -1,7 +1,25 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #define ROWS 3
 #define COLS 3
+
+void delete_element(int matrix[ROWS][COLS], int row, int col)
+{
+    int i, j;
+
+    // delete the element by shifting the elements above it down one row
+    for (i = row; i < ROWS - 1; i++)
+    {
+        for (j = 0; j < COLS; j++)
+        {
+            matrix[i][j] = matrix[i + 1][j];
+        }
+    }
+}
+
+void delete_element(int matrix[ROWS][COLS], int row, int col);
 
 int main()
 {
@@ -33,14 +51,8 @@ int main()
     printf("Enter the row and column of the element to be deleted: ");
     scanf("%d %d", &row, &col);
 
-    // delete the element by shifting the elements above it down one row
-    for (i = row; i < ROWS - 1; i++)
-    {
-        for (j = 0; j < COLS; j++)
-        {
-            matrix[i][j] = matrix[i + 1][j];
-        }
-    }
+    // call the "delete_element" function
+    delete_element(matrix, row, col);
 
     // print the modified matrix
     printf("Modified matrix:\n");
