@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+#define COLS 5
+
+int main()
+{
+    int table[COLS];
+    int col;
+    int i;
+
+    // initialize the table with some values
+    for (i = 0; i < COLS; i++)
+    {
+        table[i] = i;
+    }
+
+    // print the original table
+    printf("Original table:\n");
+    for (i = 0; i < COLS; i++)
+    {
+        printf("%d ", table[i]);
+    }
+    printf("\n");
+
+    // read the element to be deleted from the user
+    printf("Enter the column of the element to be deleted: ");
+    scanf("%d", &col);
+
+    // delete the element by shifting the elements to the right of it one column to the left
+    for (i = col; i < COLS - 1; i++)
+    {
+        table[i] = table[i + 1];
+    }
+
+    // print the modified table
+    printf("Modified table:\n");
+    for (i = 0; i < COLS - 1; i++)
+    {
+        printf("%d ", table[i]);
+    }
+    printf("\n");
+
+    return 0;
+}

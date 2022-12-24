@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+#define SIZE 5
+
+struct Person
+{
+    char name[100];
+    int age;
+};
+
+int main()
+{
+    struct Person people[SIZE];
+    int i, index;
+
+    // initialize the array with some values
+    for (i = 0; i < SIZE; i++)
+    {
+        sprintf(people[i].name, "Person %d", i + 1);
+        people[i].age = 20 + i;
+    }
+
+    // print the original array
+    printf("Original array:\n");
+    for (i = 0; i < SIZE; i++)
+    {
+        printf("Name: %s, Age: %d\n", people[i].name, people[i].age);
+    }
+
+    // read the index of the element to be deleted from the user
+    printf("Enter the index of the element to be deleted: ");
+    scanf("%d", &index);
+
+    // delete the element by shifting the elements to the right of it one position to the left
+    for (i = index; i < SIZE - 1; i++)
+    {
+        people[i] = people[i + 1];
+    }
+
+    // print the modified array
+    printf("Modified array:\n");
+    for (i = 0; i < SIZE - 1; i++)
+    {
+        printf("Name: %s, Age: %d\n", people[i].name, people[i].age);
+    }
+
+    return 0;
+}
+j
