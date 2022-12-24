@@ -1,14 +1,13 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
-int main()
+// Function definition for "is_palindrome"
+// Takes a string as an argument and returns 1 if the string is a palindrome, and 0 if it is not
+int is_palindrome(char str[])
 {
-    char str[100];
     int i, length;
     int palindrome = 1; // assume the string is a palindrome
-
-    printf("Enter a string: ");
-    scanf("%s", str); // read the string from the user
 
     length = strlen(str); // get the length of the string
 
@@ -23,7 +22,24 @@ int main()
         }
     }
 
-    if (palindrome)
+    return palindrome;
+}
+
+// Function declaration for "is_palindrome"
+int is_palindrome(char str[]);
+
+int main()
+{
+    char str[100];
+
+    printf("Enter a string: ");
+    scanf("%s", str); // read the string from the user
+
+    // Call the "is_palindrome" function to check if the string is a palindrome
+    int result = is_palindrome(str);
+
+    // Print the result of the check
+    if (result == 1)
     {
         printf("The string is a palindrome.\n");
     }

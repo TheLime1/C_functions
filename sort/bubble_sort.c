@@ -1,32 +1,43 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #define SIZE 5
 
-int main()
+// Function definition for "bubble_sort"
+// Takes an integer array and its size as arguments and sorts the array in ascending order using the bubble sort algorithm
+void bubble_sort(int arr[], int size)
 {
     int i, j;
-    int array[SIZE] = {4, 3, 1, 2, 5}; // initialize the array
-
-    // perform bubble sort
-    for (i = 0; i < SIZE - 1; i++)
+    for (i = 0; i < size - 1; i++)
     {
-        for (j = 0; j < SIZE - i - 1; j++)
+        for (j = 0; j < size - i - 1; j++)
         {
-            if (array[j] > array[j + 1])
+            if (arr[j] > arr[j + 1])
             {
-                // swap the elements if they are in the wrong order
-                int temp = array[j];
-                array[j] = array[j + 1];
-                array[j + 1] = temp;
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
             }
         }
     }
+}
+
+// Function declaration for "bubble_sort"
+void bubble_sort(int arr[], int size);
+
+int main()
+{
+    int arr[SIZE] = {5, 1, 4, 2, 3};
+
+    // call the "bubble_sort" function
+    bubble_sort(arr, SIZE);
 
     // print the sorted array
     printf("Sorted array: ");
-    for (i = 0; i < SIZE; i++)
+    for (int i = 0; i < SIZE; i++)
     {
-        printf("%d ", array[i]);
+        printf("%d ", arr[i]);
     }
     printf("\n");
 

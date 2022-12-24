@@ -1,31 +1,43 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #define SIZE 5
 
+// Function definition for "insertion_sort"
+// Takes an integer array and its size as arguments and sorts the array in ascending order using the insertion sort algorithm
+void insertion_sort(int arr[], int size)
+{
+    int i, key, j;
+    for (i = 1; i < size; i++)
+    {
+        key = arr[i];
+        j = i - 1;
+
+        while (j >= 0 && arr[j] > key)
+        {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+}
+
+// Function declaration for "insertion_sort"
+void insertion_sort(int arr[], int size);
+
 int main()
 {
-    int i, j;
-    int array[SIZE] = {4, 3, 1, 2, 5}; // initialize the array
+    int arr[SIZE] = {5, 1, 4, 2, 3};
 
-    // perform insertion sort
-    for (i = 1; i < SIZE; i++)
-    {
-        int key = array[i]; // the element to be inserted
-        j = i - 1;
-        // shift the elements of the sorted part of the array to the right until the proper position for the key is found
-        while (j >= 0 && array[j] > key)
-        {
-            array[j + 1] = array[j];
-            j--;
-        }
-        array[j + 1] = key; // insert the key into its proper position
-    }
+    // call the "insertion_sort" function
+    insertion_sort(arr, SIZE);
 
     // print the sorted array
     printf("Sorted array: ");
-    for (i = 0; i < SIZE; i++)
+    for (int i = 0; i < SIZE; i++)
     {
-        printf("%d ", array[i]);
+        printf("%d ", arr[i]);
     }
     printf("\n");
 

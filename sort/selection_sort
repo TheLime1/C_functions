@@ -1,35 +1,45 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 #define SIZE 5
 
-int main()
+// Function definition for "selection_sort"
+// Takes an integer array and its size as arguments and sorts the array in ascending order using the selection sort algorithm
+void selection_sort(int arr[], int size)
 {
-    int i, j;
-    int array[SIZE] = {4, 3, 1, 2, 5}; // initialize the array
-
-    // perform selection sort
-    for (i = 0; i < SIZE - 1; i++)
+    int i, j, min_idx;
+    for (i = 0; i < size - 1; i++)
     {
-        // find the minimum element in the unsorted part of the array
-        int min_index = i;
-        for (j = i + 1; j < SIZE; j++)
+        min_idx = i;
+        for (j = i + 1; j < size; j++)
         {
-            if (array[j] < array[min_index])
+            if (arr[j] < arr[min_idx])
             {
-                min_index = j;
+                min_idx = j;
             }
         }
-        // swap the minimum element with the first element of the unsorted part of the array
-        int temp = array[i];
-        array[i] = array[min_index];
-        array[min_index] = temp;
+        int temp = arr[min_idx];
+        arr[min_idx] = arr[i];
+        arr[i] = temp;
     }
+}
+
+// Function declaration for "selection_sort"
+void selection_sort(int arr[], int size);
+
+int main()
+{
+    int arr[SIZE] = {5, 1, 4, 2, 3};
+
+    // call the "selection_sort" function
+    selection_sort(arr, SIZE);
 
     // print the sorted array
     printf("Sorted array: ");
-    for (i = 0; i < SIZE; i++)
+    for (int i = 0; i < SIZE; i++)
     {
-        printf("%d ", array[i]);
+        printf("%d ", arr[i]);
     }
     printf("\n");
 

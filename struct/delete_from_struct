@@ -1,49 +1,42 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-#define SIZE 5
+#define MAX_LENGTH 50
 
+// Define a struct to hold information about a person
 struct Person
 {
-    char name[100];
+    char name[MAX_LENGTH];
     int age;
 };
 
+// Function definition for "delete_element"
+// Takes a pointer to a Person struct and the index of the element to be deleted as arguments
+// Deletes the element by shifting the elements after it one position to the left
+void delete_element(struct Person *people, int index)
+{
+    int i;
+    int num_people = sizeof(people) / sizeof(struct Person); // calculate the number of people in the struct array
+
+    // Shift the elements after the element to be deleted one position to the left
+    for (i = index; i < num_people - 1; i++)
+    {
+        strcpy(people[i].name, people[i + 1].name);
+        people[i].age = people[i + 1].age;
+    }
+}
+
+// Function declaration for "delete_element"
+void delete_element(struct Person *people, int index);
+
 int main()
 {
-    struct Person people[SIZE];
-    int i, index;
+    // Create an array of Person structs
+    struct Person people[5] = {{"Alice", 30}, {"Bob", 35}, {"Charlie", 40}, {"Dave", 45}, {"Eve", 50}};
 
-    // initialize the array with some values
-    for (i = 0; i < SIZE; i++)
-    {
-        sprintf(people[i].name, "Person %d", i + 1);
-        people[i].age = 20 + i;
-    }
-
-    // print the original array
-    printf("Original array:\n");
-    for (i = 0; i < SIZE; i++)
-    {
-        printf("Name: %s, Age: %d\n", people[i].name, people[i].age);
-    }
-
-    // read the index of the element to be deleted from the user
-    printf("Enter the index of the element to be deleted: ");
-    scanf("%d", &index);
-
-    // delete the element by shifting the elements to the right of it one position to the left
-    for (i = index; i < SIZE - 1; i++)
-    {
-        people[i] = people[i + 1];
-    }
-
-    // print the modified array
-    printf("Modified array:\n");
-    for (i = 0; i < SIZE - 1; i++)
-    {
-        printf("Name: %s, Age: %d\n", people[i].name, people[i].age);
-    }
+    // Call the "delete_element" function to delete the second element (index 1)
+    delete_element(people, 1);
 
     return 0;
 }
-j
