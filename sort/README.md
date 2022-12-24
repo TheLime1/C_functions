@@ -1,4 +1,4 @@
-### explain insertion sort to a 3rd grader with an example
+### explain <ins>insertion</ins> sort to a 3rd grader with an example
 
 Sure! Here is a simple explanation of insertion sort that a 3rd grader might understand:
 
@@ -18,7 +18,7 @@ Original pile: [5, 2, 4, 1, 3]
 
 Sorted pile: [1, 2, 3, 4, 5]
 
-### explain bubble sort to a 3rd grader with an example
+### explain <ins>bubble</ins> sort to a 3rd grader with an example
 
 Sure! Here is a simple explanation of bubble sort that a 3rd grader might understand:
 
@@ -38,7 +38,7 @@ Original pile: [5, 2, 4, 1, 3]
 
 Sorted pile: [1, 2, 3, 4, 5]
 
-### explain selection sort to a 3rd grader with an example
+### explain <ins>selection</ins> sort to a 3rd grader with an example
 
 Sure! Here is a simple explanation of selection sort that a 3rd grader might understand:
 
