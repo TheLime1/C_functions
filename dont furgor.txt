@@ -1,4 +1,4 @@
 fflush(stdin); -> prevent string input bugs
 
 gets(nom_de_variable); -> better way to scan a string nom_de_variable
-
+puts(nom_de_variable); -> better way to print a string nom_de_variable
