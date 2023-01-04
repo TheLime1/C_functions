@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void table_fill(int T[], int n)
+void table_fill(int *T, int n)
 {
     int i;
 
@@ -13,14 +13,14 @@ void table_fill(int T[], int n)
     }
 }
 
-void table_fill(int T[], int n);
+void table_fill(int *T, int n);
 
 int main()
 {
     int T[99], n;
     printf("how many cases are there ?");
     scanf("%d", &n);
-    table_fill(T[99], n);
+    table_fill(T, n);
 
     return 0;
 }

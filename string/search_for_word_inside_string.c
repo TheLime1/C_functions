@@ -1,24 +1,27 @@
-// maybe m9rinehch.
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 int search(char *str, char *word)
 {
-    // split the string into words
-    char *p = strtok(str, " ");
-    int i = 0;
+    int i, j, str_len, word_len;
+    str_len = strlen(str);
+    word_len = strlen(word);
 
-    // search for the word
-    while (p != NULL)
+    for (i = 0; i < str_len - word_len + 1; i++)
     {
-        if (strcmp(p, word) == 0)
+        for (j = 0; j < word_len; j++)
+        {
+            if (str[i + j] != word[j])
+            {
+                break;
+            }
+        }
+        if (j == word_len)
         {
             // the word was found
             return i;
         }
-        i++;
-        p = strtok(NULL, " ");
     }
 
     // the word was not found
