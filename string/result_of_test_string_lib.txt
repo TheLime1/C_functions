@@ -1,0 +1,7 @@
+s1 length: 5
+s2 length: 5
+Copied s1 to dest: Aymen
+Copied 3 characters of s2 to dest: Hma
+Concatenated s1 to dest: HmaAymen
+Concatenated 3 characters of s2 to dest: HmaAymenHma
+s1 and s2 compared: -1
