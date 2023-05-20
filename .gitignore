@@ -1,5 +1,10 @@
 #custom
 /.vscode
+*.layout
+*.cbp
+*.depend
+*.bmarks
+*.bin
 
 # Prerequisites
 *.d
