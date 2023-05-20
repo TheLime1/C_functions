@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<BrowseTracker_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="fonctions.c" open="1" top="0" tabpos="7">
+		<Cursor position="5005" topLine="234" />
+		<BrowseMarks positions="" />
+	</File>
+	<File name="fonctions.h" open="1" top="0" tabpos="8">
+		<Cursor position="60" topLine="0" />
+		<BrowseMarks positions="" />
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="6">
+		<Cursor position="103" topLine="0" />
+		<BrowseMarks positions="" />
+	</File>
+</BrowseTracker_layout_file>

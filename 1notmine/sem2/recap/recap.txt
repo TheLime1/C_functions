@@ -1,0 +1,91 @@
+Fichiers texte:
+    ecriture:
+        int fprintf(f, "chaine de controle", expression-1, .., expression-n);
+            fprintf(f, "%s %s %d\n", nom, prenom, age);
+    lecture:
+        int fscanf(f, "chaine de controle", argument-1, .., argument-n); 
+            fscanf(f, "%s %s %d\n" , nom, prenom, &age);
+
+    int fprintf(FILE *stream, const char *format, ...)
+        Parameters
+            stream − This is the pointer to a FILE object that identifies the stream.
+            format − This is the C string that contains the text to be written to the stream. It can optionally contain embedded format tags that are replaced by the values specified in subsequent additional arguments and formatted as requested. Format tags prototype is %[flags][width][.precision][length]specifier
+
+        Return Value
+            If successful, the total number of characters written is returned otherwise, a negative number is returned
+    
+    int fscanf(FILE *stream, const char *format, ...)
+        Parameters
+            stream − This is the pointer to a FILE object that identifies the stream.
+            format − This is the C string that contains one or more of the following items − Whitespace character, Non-whitespace character and Format specifiers. A format specifier will be as [=%[*][width][modifiers]type=]
+        
+        Return Value
+            This function returns the number of input items successfully matched and assigned, which can be fewer than provided for, or even zero in the event of an early matching failure.
+            
+            
+                **************************************************************
+                
+                
+Fichiers binaires:
+    size_t fwrite(void* pointeur, size_t taille, size_t nombre, FILE* flot);
+        fwrite(&e, sizeof(Etudient), 1, f);
+    size_t fread(void* pointeur, size_t taille, size_t nombre, FILE* flot);
+        fread(&e, sizeof-(Etudiant), 1, f);
+    
+    size_t fread(void *ptr, size_t size, size_t nmemb, FILE *stream)
+        Parameters
+            ptr − This is the pointer to a block of memory with a minimum size of size*nmemb bytes.
+            size − This is the size in bytes of each element to be read.
+            nmemb − This is the number of elements, each one with a size of size bytes.
+            stream − This is the pointer to a FILE object that specifies an input stream.
+
+        Return Value
+        error had occurred or the End Of File was reached.
+
+
+    size_t fwrite(const void *ptr, size_t size, size_t nmemb, FILE *stream)
+        Parameters
+            ptr − This is the pointer to the array of elements to be written.
+            size − This is the size in bytes of each element to be written.
+            nmemb − This is the number of elements, each one with a size of size bytes.
+            stream − This is the pointer to a FILE object that specifies an output stream.
+
+    Return Value
+        This function returns the total number of elements successfully returned as a size_t object, which is an integral data type. If this number differs from the nmemb parameter, it will show an error.
+        
+        
+        
+**************************************************************
+**************************************************************
+**************************************************************
+
+Allocation dynamique:
+
+    malloc
+    calloc
+    realloc
+    free
+
+    void* malloc(size_t n)
+    void* calloc(size_t n, size_t t)
+    void* realloc(void* ptr, size_t t)
+    void free(void* ptr)
+    size_t: an unsigned integer data type representing the size of a memory block in bytes
+
+    e.g.
+    int* pInt = (int*) malloc(sizeof(int));
+    int* tab  = (int*) calloc(n, sizeof(int));
+    pInt      = (int*) realloc(p, n*sizeof(int));
+    free(pInt);
+
+    *tableau        et  tableau[0]      accès au 1er élément
+    *(tableau+i)    et  tableau[i]      accès à l'élément i
+    tableau         et  &tableau[0]     adresse du 1er élément
+    (tableau + i)   et  &(tableau[i])   adresse de l'élément i 
+
+
+**************************************************************
+**************************************************************
+**************************************************************
+
+    

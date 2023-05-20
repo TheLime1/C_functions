@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1614340433 source:c:\users\user31\documents\esprit\sem2\pp2\app\app3\app3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"wagons.h"
+
+1614343640 c:\users\user31\documents\esprit\sem2\pp2\app\app3\app3\wagons.h
+
+1614343654 source:c:\users\user31\documents\esprit\sem2\pp2\app\app3\app3\wagons.c
+	<stdio.h>
+	<stdlib.h>
+	"wagons.h"
+
+1614340433 source:c:\users\user31\documents\esprit\sem2\pp2\app\app3-lsc-p1\app3\main.c
+	<stdio.h>
+	<stdlib.h>
+	"wagons.h"
+
+1614343640 c:\users\user31\documents\esprit\sem2\pp2\app\app3-lsc-p1\app3\wagons.h
+
+1614343654 source:c:\users\user31\documents\esprit\sem2\pp2\app\app3-lsc-p1\app3\wagons.c
+	<stdio.h>
+	<stdlib.h>
+	"wagons.h"
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<BrowseTracker_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="even.c" open="1" top="1" tabpos="3">
+		<Cursor position="2604" topLine="95" />
+	</File>
+	<File name="main.c" open="0" top="0" tabpos="1">
+		<Cursor position="184" topLine="0" />
+	</File>
+	<File name="even.h" open="1" top="0" tabpos="2">
+		<Cursor position="442" topLine="0" />
+	</File>
+</BrowseTracker_layout_file>

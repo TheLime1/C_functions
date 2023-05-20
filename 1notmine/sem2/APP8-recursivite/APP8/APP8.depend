@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1619184781 source:c:\users\user31\documents\esprit\sem2\pp2\app\app8-recursivite\app8\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Ex1.h"
+	"Ex2.h"
+	"Ex3.h"
+
+1619175118 source:c:\users\user31\documents\esprit\sem2\pp2\app\app8-recursivite\app8\ex1.c
+	"Ex1.h"
+
+1619174792 c:\users\user31\documents\esprit\sem2\pp2\app\app8-recursivite\app8\ex1.h
+
+1619184615 source:c:\users\user31\documents\esprit\sem2\pp2\app\app8-recursivite\app8\ex3.c
+	<stdio.h>
+	"Ex3.h"
+
+1619172913 c:\users\user31\documents\esprit\sem2\pp2\app\app8-recursivite\app8\ex3.h
+
+1619180384 source:c:\users\user31\documents\esprit\sem2\pp2\app\app8-recursivite\app8\ex2.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"Ex2.h"
+
+1619178707 c:\users\user31\documents\esprit\sem2\pp2\app\app8-recursivite\app8\ex2.h
+

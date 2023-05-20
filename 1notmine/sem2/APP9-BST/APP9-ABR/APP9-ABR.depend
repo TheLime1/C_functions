@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1620254799 source:c:\users\user31\documents\esprit\sem2\pp2\app\app9-bst\app9-abr\abr.c
+	"ABR.h"
+	<stdlib.h>
+	<stdio.h>
+
+1620560887 c:\users\user31\documents\esprit\sem2\pp2\app\app9-bst\app9-abr\abr.h
+
+1620307344 source:c:\users\user31\documents\esprit\sem2\pp2\app\app9-bst\app9-abr\main.c
+	"ABR.h"
+	<stdlib.h>
+	<stdio.h>
+

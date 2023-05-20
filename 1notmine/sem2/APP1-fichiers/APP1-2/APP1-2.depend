@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1616843295 source:c:\users\user31\documents\esprit\sem2\pp2\app\app1\app1-2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"even.h"
+
+1616689118 c:\users\user31\documents\esprit\sem2\pp2\app\app1\app1-2\even.h
+
+1616843320 source:c:\users\user31\documents\esprit\sem2\pp2\app\app1\app1-2\even.c
+	"even.h"
+	<stdio.h>
+	<string.h>
+
+1616843295 source:c:\users\user31\documents\esprit\sem2\pp2\app\app1-fichiers\app1-2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"even.h"
+
+1616689118 c:\users\user31\documents\esprit\sem2\pp2\app\app1-fichiers\app1-2\even.h
+

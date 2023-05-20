@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1622971445 source:c:\users\user31\documents\esprit\sem2\pp2\app\examen2016\examen2016\examen2016.c
+	"Examen2016.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+
+1620568586 c:\users\user31\documents\esprit\sem2\pp2\app\examen2016\examen2016\examen2016.h
+
+1620568548 source:c:\users\user31\documents\esprit\sem2\pp2\app\examen2016\examen2016\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Examen2016.h"
+

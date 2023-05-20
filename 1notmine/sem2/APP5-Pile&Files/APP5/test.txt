@@ -1,0 +1,4 @@
+Numero: 99	Priorite: 2
+Numero: 588	Priorite: 2
+Numero: 11	Priorite: 1
+Numero: 44	Priorite: 1

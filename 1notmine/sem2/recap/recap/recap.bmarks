@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<BrowseTracker_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="main.c" open="0" top="0" tabpos="6">
+		<Cursor position="270" topLine="3" />
+	</File>
+	<File name="fichiersTexte.h" open="0" top="0" tabpos="0">
+		<Cursor position="558" topLine="0" />
+	</File>
+	<File name="LDC.c" open="1" top="0" tabpos="5">
+		<Cursor position="5021" topLine="266" />
+	</File>
+	<File name="alloc_dyn.c" open="0" top="0" tabpos="7">
+		<Cursor position="319" topLine="0" />
+	</File>
+	<File name="pile_file.c" open="0" top="0" tabpos="3">
+		<Cursor position="3871" topLine="202" />
+	</File>
+	<File name="alloc_dyn.h" open="0" top="0" tabpos="0">
+		<Cursor position="264" topLine="0" />
+	</File>
+	<File name="fichiersTexte.c" open="0" top="0" tabpos="5">
+		<Cursor position="4714" topLine="150" />
+	</File>
+	<File name="fichiersBinaires.h" open="0" top="0" tabpos="5">
+		<Cursor position="306" topLine="0" />
+	</File>
+	<File name="LDC.h" open="1" top="0" tabpos="4">
+		<Cursor position="337" topLine="12" />
+	</File>
+	<File name="LSC.c" open="0" top="0" tabpos="2">
+		<Cursor position="435" topLine="18" />
+	</File>
+	<File name="pile_file.h" open="0" top="0" tabpos="6">
+		<Cursor position="321" topLine="9" />
+	</File>
+	<File name="general.c" open="1" top="0" tabpos="6">
+		<Cursor position="1011" topLine="33" />
+	</File>
+	<File name="LSC.h" open="0" top="0" tabpos="8">
+		<Cursor position="257" topLine="6" />
+	</File>
+	<File name="ABR.h" open="0" top="0" tabpos="1">
+		<Cursor position="273" topLine="15" />
+		<BrowseMarks positions="" />
+	</File>
+	<File name="ABR.c" open="1" top="0" tabpos="7">
+		<Cursor position="1587" topLine="57" />
+	</File>
+	<File name="fichiersBinaires.c" open="0" top="0" tabpos="9">
+		<Cursor position="1384" topLine="33" />
+	</File>
+	<File name="general.h" open="0" top="0" tabpos="2">
+		<Cursor position="110" topLine="0" />
+	</File>
+</BrowseTracker_layout_file>

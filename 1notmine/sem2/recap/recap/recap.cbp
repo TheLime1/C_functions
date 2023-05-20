@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="recap" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/recap" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/recap" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="ABR.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ABR.h" />
+		<Unit filename="LDC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="LDC.h" />
+		<Unit filename="LSC.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="LSC.h" />
+		<Unit filename="alloc_dyn.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="alloc_dyn.h" />
+		<Unit filename="fichiersBinaires.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fichiersBinaires.h" />
+		<Unit filename="fichiersTexte.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fichiersTexte.h" />
+		<Unit filename="general.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="general.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pile_file.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="pile_file.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

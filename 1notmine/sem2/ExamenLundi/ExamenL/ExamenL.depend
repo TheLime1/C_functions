@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1623086421 source:c:\users\user31\documents\esprit\sem2\pp2\app\examenlu\examenl\fonctions.c
+	"fonctions.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1623082451 c:\users\user31\documents\esprit\sem2\pp2\app\examenlu\examenl\fonctions.h
+	<stdlib.h>
+
+1623086381 source:c:\users\user31\documents\esprit\sem2\pp2\app\examenlu\examenl\main.c
+	"fonctions.h"
+	<stdio.h>
+	<stdlib.h>
+
