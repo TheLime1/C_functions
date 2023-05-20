@@ -1,10 +1,10 @@
 #custom
 /.vscode
-*.layout
-*.cbp
-*.depend
-*.bmarks
-*.bin
+/1notmine/**/*.layout
+/1notmine/**/*.cbp
+/1notmine/**/*.depend
+/1notmine/**/*.bmarks
+/1notmine/**/*.bin
 
 # Prerequisites
 *.d
