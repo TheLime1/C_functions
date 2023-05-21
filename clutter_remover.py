@@ -13,7 +13,7 @@ def remove_files_with_extension(extension):
                 os.remove(file_path)
 
 
-extensions = ['layout', 'cbp', 'depend', 'bmarks', 'bin']
+extensions = ['layout', 'cbp', 'depend', 'bmarks', 'bin', 'zip', 'rar']
 
 for extension in extensions:
     remove_files_with_extension(f".{extension}")
